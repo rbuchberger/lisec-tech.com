@@ -3425,7 +3425,7 @@
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.175);
+		background: rgba(240, 142, 89, 0.3);
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
@@ -3576,7 +3576,7 @@
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
-			border-top: solid 2px #eeeeee;
+			/* border-top: solid 2px #eeeeee; */
 			margin: 0;
 		}
 
@@ -4489,7 +4489,20 @@
 
  .footer-flags {
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	margin-bottom: 1em;
+ }
+
+ .project-manager-intro {
+	display: flex;
+	align-items: end;
+ }
+
+ .project-manager-intro .text {
+	padding-right: 3rem;
+ }
+
+ .project-manager-intro .portrait {
+	display: flex;
+
  }
