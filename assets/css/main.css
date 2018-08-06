@@ -1713,6 +1713,10 @@
 		margin: 0 0 1rem 0;
 	}
 
+	#site-banner {
+		text-transform: none;
+	}
+
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			border-bottom: 0;
 			color: inherit;
@@ -4480,3 +4484,12 @@
 		}
 
 	}
+
+ /* Tweaks */
+
+ .footer-flags {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1em;
+ }
