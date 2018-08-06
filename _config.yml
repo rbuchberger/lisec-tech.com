@@ -20,24 +20,32 @@ description: >-
   all-solid-state lithium battery.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://lisec-tech.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ""
-github_username:  ""
+
 
 # Defaults
-# - scope:
-#     path: "_posts"
-#   values:
-#     layout: post
-#     permalink: "/blog/:title"
+
+
+defaults:
+- 
+  scope:
+    path: "pages"
+  values: 
+    layout: page
+    title: "no title"
+- scope:
+    path: "_posts"
+  values:
+    layout: post
+    permalink: "/blog/:title"
 
 # Build settings
 markdown: kramdown
 theme: massively_jekyll_theme
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
   # - jekyll-mentions
-  - jekyll-sitemap
-  - jekyll-feed
+  # - jekyll-sitemap
+  # - jekyll-feed
   # - jekyll-gist
   - jekyll-paginate
 
@@ -49,14 +57,15 @@ kramdown:
   enable_coderay:   false
 
 mathjax:            true
-sass:
-  sass_dir:         _sass
-  style:            compressed
+# sass:
+#   sass_dir:         _sass
+#   style:            compressed
 
 
 # Social media & Contact info
 
 email:  daziolkowska.edu@gmail.com
+linkedin_url: http://www.linkedin.com/in/dominika-zi%C3%B3%C5%82kowska-22424974
 
 
 # Exclude from processing.
