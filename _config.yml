@@ -13,22 +13,51 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: LiSEC-Tech
+email: daziolkowska.edu@gmail.com
+description: >-
+  This is Dr. Ziółkowska's project which focuses on creating an 
+  all-solid-state lithium battery.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://lisec-tech.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ""
+github_username:  ""
+
+# Defaults
+# - scope:
+#     path: "_posts"
+#   values:
+#     layout: post
+#     permalink: "/blog/:title"
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: massively_jekyll_theme
 plugins:
   - jekyll-feed
+  # - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-feed
+  # - jekyll-gist
+  - jekyll-paginate
+
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+
+# Social media & Contact info
+
+email:  daziolkowska.edu@gmail.com
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
