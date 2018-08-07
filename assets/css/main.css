@@ -4497,16 +4497,12 @@
 	margin-bottom: 1em;
  }
 
- .project-manager-intro {
-	display: flex;
-	align-items: end;
+ .fa-battery-full, .fa-cogs, .fa-flask {
+	color: rgb(240, 142, 89);
+    margin: 0 1rem;
+    font-size: x-large;
  }
 
- .project-manager-intro .text {
-	padding-right: 3rem;
- }
-
- .project-manager-intro .portrait {
-	display: flex;
-
+ .fa-battery-full {
+	transform: rotate(-90deg);
  }
