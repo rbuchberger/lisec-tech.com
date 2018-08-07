@@ -17,42 +17,13 @@
 		{% include header.html %}
 		{% include menu.html %}
 
-		<h2>Project</h2>
-		<p>Safety issues are of enormous concern in developing advanced energy storage systems, especially lithium technologies. Commercial
-			Li-ion batteries contain flammable organic liquid electrolytes and corresponding technical challenges; most incidents involving
-			Li-ion batteries were caused by the ignition of the electrolyte. The main aim of this proposal is to assemble a completely
-			solid-state cell using an inorganic Li-ion superconductor to benefit from its superior electrochemical, mechanical and thermal
-			stability, the impossibility of leakage, and the possibility of battery miniaturization.</p>
+		<h1>{{ page.title }}</h1>
 
-		<p><a href="/homing/">Read more!</a></p>
-	
-		{% if site.posts != null %}
-		<h2>Latest News:</h2>
-		<section class="posts">
-			{% for post in site.posts limit: 2 %}
-			<article>
-				<header>
-					<span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
-					<h2>
-						<a href="{{ post.url  | relative_url }}">{{ post.title }}</a>
-					</h2>
-				</header>
-				<a href="{{ post.url  | relative_url }}" class="image fit">
-					<img src="{{ post.image }}" alt="" />
-				</a>
-				<p>{{ post.excerpt }}</p>
-				<ul class="actions">
-					<li>
-						<a href="{{ post.url  | relative_url }}" class="button">Full Story</a>
-					</li>
-				</ul>
-			</article>
-			{% endfor %}
-		</section>
-		{% endif %} 
+		{{ content }}
 		
-	{% include footer.html %}
-
+		{% include footer.html %}
+	</div>
+	
 </body>
 
 </html>

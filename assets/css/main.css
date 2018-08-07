@@ -3335,12 +3335,12 @@
 
 		#header a {
 			color: #ffffff;
-			/* border-bottom-color: rgba(255, 255, 255, 0.5); */
+			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
 			#header a:hover {
 				border-bottom-color: transparent;
-				/* color: #18bfef !important; */
+				color: #18bfef !important;
 			}
 
 		#header strong, #header b {

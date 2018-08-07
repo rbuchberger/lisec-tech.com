@@ -1,0 +1,48 @@
+---
+permalink: "/"
+layout: home
+title: Project
+---
+<article class="post featured">
+    <p>Safety issues are of enormous concern in developing advanced energy storage systems, especially lithium technologies.
+        Commercial Li-ion batteries contain flammable organic liquid electrolytes and corresponding technical challenges;
+        most incidents involving Li-ion batteries were caused by the ignition of the electrolyte. The main aim of this proposal
+        is to assemble a completely solid-state cell using an inorganic Li-ion superconductor to benefit from its superior
+        electrochemical, mechanical and thermal stability, the impossibility of leakage, and the possibility of battery miniaturization.</p>
+
+    <p>
+        <a href="/homing/" class="button">Read more!</a>
+    </p>
+</article>
+
+
+
+{% assign events = site.posts | where: "event", true %}
+{% assign sorted_events = events | sort:"event_date" %}
+{% if sorted_events != null %}
+    <h2>Upcoming Events:</h2>
+   
+    <section class="posts">
+        {% for event in sorted_events %}
+            <article>
+                <header>
+                    <span class="date">{{ event.event_date | date: "%B %-d, %Y" }}</span>
+                    <h2>
+                        <a href="{{ event.url  | relative_url }}">{{ event.title }}</a>
+                    </h2>
+                </header>
+                <a href="{{ event.url  | relative_url }}" class="image fit">
+                    <img src="{{ event.image }}" alt="" />
+                </a>
+                <p>{{ event.excerpt }}</p>
+                <ul class="actions">
+                    <li>
+                        <a href="{{ event.url  | relative_url }}" class="button">Full Story</a>
+                    </li>
+                </ul>
+            </article>
+        {% endfor %}
+        
+    </section>
+ 
+{% endif %}
