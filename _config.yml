@@ -25,7 +25,7 @@ url: "http://lisec-tech.com" # the base hostname & protocol for your site, e.g. 
 
 collections:
   - events
-  - job_postings
+  - openings
 
 # Defaults
 
@@ -44,10 +44,12 @@ defaults:
     path: "_events"
   values:
     layout: page
+    permalink: "/events/:title"
 - scope:
-    path: "_job_postings"
+    path: "_openings"
   values:
     layout: page
+    permalink: "/openings/:title"
 
 
 # Build settings

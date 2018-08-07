@@ -1,0 +1,10 @@
+---
+title: Job Openings
+permalink: /openings/
+---
+<dl>
+{% for opening in site.openings %}
+    <dt>{{ opening.title }}</dt>
+    <dd>{{ opening.content }}</dd>
+{% endfor %}
+</dl>
