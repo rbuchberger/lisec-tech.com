@@ -3576,7 +3576,7 @@
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
-			border-top: solid 2px #eeeeee;
+			/* border-top: solid 2px #eeeeee; */
 			margin: 0;
 		}
 
@@ -3676,10 +3676,10 @@
 			}
 
 			#main > .posts > article {
-				border-color: #eeeeee;
+				/* border-color: #eeeeee;
 				border-left-width: 2px;
 				border-style: solid;
-				border-top-width: 2px;
+				border-top-width: 2px; */
 				text-align: center;
 			}
 
@@ -3687,13 +3687,13 @@
 					margin-bottom: 0;
 				}
 
-				#main > .posts > article:nth-child(2n - 1) {
+				/* #main > .posts > article:nth-child(2n - 1) {
 					border-left-width: 0;
 				}
 
 				#main > .posts > article:nth-child(-n + 2) {
 					border-top-width: 0;
-				}
+				} */
 
 			@media screen and (max-width: 980px) {
 
@@ -3704,6 +3704,7 @@
 				#main > .posts > * {
 					padding: 2.5rem;
 					width: 50%;
+					margin: 1rem;
 				}
 
 			}
@@ -4497,12 +4498,15 @@
 	margin-bottom: 1em;
  }
 
- .fa-battery-full, .fa-cogs, .fa-flask {
+ .fa-bolt, .fa-cogs, .fa-flask {
 	color: rgb(240, 142, 89);
     margin: 0 1rem;
-    font-size: x-large;
+	font-size: x-large;
  }
 
  .fa-battery-full {
+	color: rgb(240, 142, 89);
+	font-size: 5rem;
 	transform: rotate(-90deg);
+	float: left;
  }

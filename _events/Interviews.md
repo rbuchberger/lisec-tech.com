@@ -1,6 +1,5 @@
 ---
 title: "Interviews with candidates"
-event: true
-event_date: 2018-09-11
+date: 2018-09-11
 ---
 Interviews will happen from the 11th through the 15th. See our job openings here.

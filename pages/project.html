@@ -4,6 +4,8 @@ layout: home
 title: Project
 ---
 <article class="post featured">
+    <i class="fa fa-battery-full"></i>
+
     <p>Safety issues are of enormous concern in developing advanced energy storage systems, especially lithium technologies.
         Commercial Li-ion batteries contain flammable organic liquid electrolytes and corresponding technical challenges;
         most incidents involving Li-ion batteries were caused by the ignition of the electrolyte. The main aim of this proposal
@@ -16,17 +18,15 @@ title: Project
 </article>
 
 
+{% if site.events != null %}
+{% assign sorted_events = site.events | sort:"date" %} 
 
-{% assign events = site.posts | where: "event", true %}
-{% assign sorted_events = events | sort:"event_date" %}
-{% if sorted_events != null %}
-    <h2>Upcoming Events:</h2>
-   
+<h1>Upcoming Events</h1>
     <section class="posts">
         {% for event in sorted_events %}
             <article>
                 <header>
-                    <span class="date">{{ event.event_date | date: "%B %-d, %Y" }}</span>
+                    <span class="date">{{ event.date | date: "%B %-d, %Y" }}</span>
                     <h2>
                         <a href="{{ event.url  | relative_url }}">{{ event.title }}</a>
                     </h2>
@@ -42,7 +42,5 @@ title: Project
                 </ul>
             </article>
         {% endfor %}
-        
     </section>
- 
 {% endif %}
