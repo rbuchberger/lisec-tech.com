@@ -4536,9 +4536,11 @@ article.inverted {
 article.inverted > div {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 article.inverted > div div {
+	min-width: 300px;
 	width: 30%;
 	padding: 1rem;
 }

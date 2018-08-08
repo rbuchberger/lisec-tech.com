@@ -1,4 +1,0 @@
----
-title: Homing
-permalink: /homing/
----
