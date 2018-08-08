@@ -1715,6 +1715,7 @@
 
 	#site-banner {
 		text-transform: none;
+		width: 80%
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -3576,7 +3577,7 @@
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
-			/* border-top: solid 2px #eeeeee; */
+			border-top: solid 2px #eeeeee;
 			margin: 0;
 		}
 
@@ -3676,10 +3677,10 @@
 			}
 
 			#main > .posts > article {
-				/* border-color: #eeeeee;
+				border-color: #eeeeee;
 				border-left-width: 2px;
 				border-style: solid;
-				border-top-width: 2px; */
+				border-top-width: 2px;
 				text-align: center;
 			}
 
@@ -3687,13 +3688,13 @@
 					margin-bottom: 0;
 				}
 
-				/* #main > .posts > article:nth-child(2n - 1) {
+				#main > .posts > article:nth-child(2n - 1) {
 					border-left-width: 0;
 				}
 
 				#main > .posts > article:nth-child(-n + 2) {
 					border-top-width: 0;
-				} */
+				}
 
 			@media screen and (max-width: 980px) {
 
@@ -4496,17 +4497,31 @@
 	display: flex;
 	justify-content: center;
 	margin-bottom: 1em;
+	width: calc(100% - 4rem);
+ }
+
+ .footer-flags img {
+	 width: 800px;
  }
 
  .fa-bolt, .fa-cogs, .fa-flask {
 	color: rgb(240, 142, 89);
-    margin: 0 1rem;
+    margin-right: .5rem;
 	font-size: x-large;
  }
 
  .fa-battery-full {
 	color: rgb(240, 142, 89);
-	font-size: 5rem;
+	font-size: 4.5rem;
 	transform: rotate(-90deg);
 	float: left;
+	position: relative;
+	top: 23px;
+	margin-bottom: 23px;
+ }
+
+ #header-logo {
+	 max-width: 400px;
+	 position: relative;
+	 top: 100px;
  }

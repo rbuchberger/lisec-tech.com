@@ -4,43 +4,39 @@ layout: home
 title: Project
 ---
 <article class="post featured">
-    <i class="fa fa-battery-full"></i>
-
-    <p>Safety issues are of enormous concern in developing advanced energy storage systems, especially lithium technologies.
-        Commercial Li-ion batteries contain flammable organic liquid electrolytes and corresponding technical challenges;
-        most incidents involving Li-ion batteries were caused by the ignition of the electrolyte. The main aim of this proposal
-        is to assemble a completely solid-state cell using an inorganic Li-ion superconductor to benefit from its superior
-        electrochemical, mechanical and thermal stability, the impossibility of leakage, and the possibility of battery miniaturization.</p>
-
-    <p>
-        <a href="/homing/" class="button">Read more!</a>
-    </p>
+    <header class="major">
+        <h2>A new generation of the lithium battery </h2>
+        <h3>assembly of an all-solid-state system</h3>
+        
+    </header>
+        
+        <p><i class="fa fa-battery-full"></i>Safety issues are of enormous concern in developing advanced energy storage systems, especially lithium technologies.
+            Commercial Li-ion batteries contain flammable organic liquid electrolytes and corresponding technical challenges;
+            most incidents involving Li-ion batteries were caused by the ignition of the electrolyte. The main aim of this proposal
+            is to assemble a completely solid-state cell using an inorganic Li-ion superconductor to benefit from its superior
+            electrochemical, mechanical and thermal stability, the impossibility of leakage, and the possibility of battery miniaturization.</p>
+            
+            <p>
+                <a href="/homing/" class="button">Read more!</a>
+            </p>
 </article>
 
-
 {% if site.events != null %}
-{% assign sorted_events = site.events | sort:"date" %} 
 
-<h1>Upcoming Events</h1>
     <section class="posts">
-        {% for event in sorted_events %}
-            <article>
+        {% for post in site.posts limit:4 %}
+        {% assign mod3 = forloop.index | modulo: 3 %}
+        <article>
                 <header>
-                    <span class="date">{{ event.date | date: "%B %-d, %Y" }}</span>
-                    <h2>
-                        <a href="{{ event.url  | relative_url }}">{{ event.title }}</a>
-                    </h2>
+                    <span class="date">{{ post.date | date_to_string }}</span>
+                    <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
                 </header>
-                <a href="{{ event.url  | relative_url }}" class="image fit">
-                    <img src="{{ event.image }}" alt="" />
-                </a>
-                <p>{{ event.excerpt }}</p>
+                <a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+                <p>{{ post.excerpt }}</p>
                 <ul class="actions">
-                    <li>
-                        <a href="{{ event.url  | relative_url }}" class="button">Full Story</a>
-                    </li>
+                    <li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
                 </ul>
             </article>
-        {% endfor %}
+{% endfor %}
     </section>
 {% endif %}
