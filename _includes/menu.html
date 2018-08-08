@@ -4,6 +4,7 @@
 		<ul class="links">
 			<li{% if page.url == "/" %} class="active"{% endif %}><a href="{{ '' | absolute_url }}">Project</a></li>
 			<li{% if page.url contains "/project_manager/" %} class="active"{% endif %}><a href="/project_manager/">Project Manager</a></li>
+			<li{% if page.url contains "/contact/" %} class="active"{% endif %}><a href="/contact/">Contact Us</a></li>
 			<li{% if page.url contains "/openings/" %} class="active"{% endif %}><a href="/openings/">Job Openings</a></li>
 			<!-- <li{% if page.url contains "/team/" %} class="active"{% endif %}><a href="/team/">Team</a></li> -->
 			<!-- <li{% if page.url contains "/blog/" %} class="active"{% endif %}><a href="/blog/">Blog</a></li> -->

@@ -4,10 +4,10 @@ layout: home
 title: Project
 ---
 <article class="post featured">
-    <header class="major">
-        <h2>A new generation of the lithium battery </h2>
-        <h3>assembly of an all-solid-state system</h3>
-        
+    <header>
+        <h2>A new generation of the lithium battery:</h2>
+        <h2>assembly of an all-solid-state system</h2>
+        <p>HOMING Program sponsored by the Foundation for Polish Science</p>
     </header>
         
         <p><i class="fa fa-battery-full"></i>Safety issues are of enormous concern in developing advanced energy storage systems, especially lithium technologies.
@@ -53,7 +53,7 @@ title: Project
 </article>
 {% if site.posts != null %}
 <section class="posts">
-        {% for post in site.posts limit:4 %}
+        {% for post in site.posts limit:2 %}
         {% assign mod3 = forloop.index | modulo: 3 %}
         <article>
                 <header>
