@@ -4525,3 +4525,27 @@
 	 position: relative;
 	 top: 100px;
  }
+
+/* Inverted display box */
+
+article.inverted {
+	background-color: rgb(240, 142, 89);
+	text-align: center;
+}
+
+article.inverted > div {
+	display: flex;
+	justify-content: space-around;
+}
+
+article.inverted > div div {
+	width: 30%;
+	padding: 1rem;
+}
+article.inverted div h4 {
+	color: #ffffff;
+}
+
+article.inverted h2 {
+	color: #ffffff;
+}

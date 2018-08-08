@@ -21,12 +21,6 @@ description: >-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://lisec-tech.com" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Custom collections
-
-collections:
-  - events
-  - openings
-
 # Defaults
 
 defaults:
@@ -40,17 +34,6 @@ defaults:
   values:
     layout: post
     permalink: "/blog/:title"
-- scope:
-    path: "_events"
-  values:
-    layout: page
-    permalink: "/events/:title"
-- scope:
-    path: "_openings"
-  values:
-    layout: page
-    permalink: "/openings/:title"
-
 
 # Build settings
 markdown: kramdown

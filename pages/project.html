@@ -21,9 +21,38 @@ title: Project
             </p>
 </article>
 
-{% if site.events != null %}
+<article class="inverted">
+    <h2>Important Dates</h2>
+    <div>
 
-    <section class="posts">
+        <div>
+            <h3>
+                Project Start
+        </h3>
+        <h4>
+            01.10.2018
+        </h4>
+    </div>
+    <div>
+        <h3>
+            Candidate Interviews
+        </h3>
+        <h4>
+            11-15.09.2018
+        </h4>
+    </div>
+    <div>
+        <h3>
+            Team Members Requirement
+        </h3>
+        <h4>
+            10.08.2018
+        </h4>
+    </div>
+</div>
+</article>
+{% if site.posts != null %}
+<section class="posts">
         {% for post in site.posts limit:4 %}
         {% assign mod3 = forloop.index | modulo: 3 %}
         <article>
