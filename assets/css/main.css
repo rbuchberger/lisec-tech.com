@@ -4510,6 +4510,10 @@
 	font-size: x-large;
  }
 
+ .fa-user {
+	 font-size: xx-large
+ }
+
  .fa-battery-full {
 	color: rgb(240, 142, 89);
 	font-size: 4.5rem;
@@ -4550,4 +4554,43 @@ article.inverted div h4 {
 
 article.inverted h2 {
 	color: #ffffff;
+}
+
+article.featured header p {
+	text-align: center;
+} 
+
+span.right {
+	margin-left: auto;
+}
+
+
+
+@media (min-width: 1100px) {
+	div.flex-container {
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: nowrap;
+	}
+	
+	div.flex-item {
+		flex-grow: 0;
+		padding: .5rem 2rem;
+		min-width: 0;
+		
+	}
+	
+	div.flex-item p {
+		max-width: 500px;
+	}
+	
+}
+
+.fa-user {
+	color: rgb(240, 142, 89);
+	font-size: 4.5rem;
+}
+
+.text-center {
+	text-align: center;
 }
