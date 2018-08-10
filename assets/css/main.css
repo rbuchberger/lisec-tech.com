@@ -4510,16 +4510,14 @@
 	font-size: x-large;
  }
 
- .fa-user {
-	 font-size: xx-large
- }
-
- .fa-battery-full {
+ .post-icon {
 	color: rgb(240, 142, 89);
-	font-size: 4.5rem;
-	transform: rotate(-90deg);
-	float: left;
+	font-size: 6rem;
+}
+
+.fa-battery-full {
 	position: relative;
+	transform: rotate(-90deg);
 	top: 23px;
 	margin-bottom: 23px;
  }
