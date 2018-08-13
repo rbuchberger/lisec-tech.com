@@ -46,6 +46,8 @@ plugins:
   # - jekyll-gist
   - jekyll-paginate
 
+exclude: [ignored_assets/, massively_README.md]
+
 kramdown:
   auto_ids:         true
   footnote_nr:      1
