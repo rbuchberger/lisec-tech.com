@@ -4580,6 +4580,12 @@ span.right {
 	div.flex-item p {
 		padding-right: 2rem;
 	}
+
+	div.flex-item a {
+		position: relative;
+		top: 1rem;
+		margin-bottom: 1rem;
+	}
 	
 }
 
