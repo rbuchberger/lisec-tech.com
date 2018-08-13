@@ -4517,11 +4517,10 @@
 	font-size: 6rem;
 }
 
-.fa-battery-full {
-	position: relative;
-	transform: rotate(-90deg);
-	top: 23px;
-	margin-bottom: 23px;
+i.fa-battery-full {
+	float: left;
+	margin-right: 1.5rem;
+	font-size: 5rem;
  }
 
  #header-logo {
@@ -4592,4 +4591,8 @@ span.right {
 
 .text-center {
 	text-align: center;
+}
+
+.float-right {
+	float: right;
 }
