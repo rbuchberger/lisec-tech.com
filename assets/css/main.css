@@ -4577,8 +4577,9 @@ span.right {
 		min-width: 35%;
 	}
 
-	div.flex-item p {
+	div.flex-item p, div.flex-item ul {
 		padding-right: 2rem;
+		text-align: justify;
 	}
 
 	div.flex-item a {
