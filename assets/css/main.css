@@ -4494,16 +4494,16 @@
  /* Tweaks */
 
  .footer-flags {
-	display: flex;
+	width: 100%;
 	justify-content: center;
-	margin: 0 auto 1rem auto;
-	max-width: calc(100% - 4rem);
+	display: flex;
+	background-color: white;
+	padding: 1rem 0;
  }
 
  .footer-flags img {
-	 max-width: 800px;
-	 height: auto;
- }
+	width: 90%
+}
 
  .fa-bolt, .fa-cogs, .fa-flask {
 	color: rgb(240, 142, 89);
