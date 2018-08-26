@@ -33,7 +33,7 @@ defaults:
     path: "_posts"
   values:
     layout: post
-    permalink: "/blog/:title"
+    permalink: "/blog/:title:output_ext"
 
 # Build settings
 markdown: kramdown
