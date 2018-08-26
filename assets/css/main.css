@@ -4582,7 +4582,7 @@ span.right {
 		text-align: justify;
 	}
 
-	div.flex-item a {
+	div.flex-item a.button {
 		position: relative;
 		top: 1rem;
 		margin-bottom: 1rem;
