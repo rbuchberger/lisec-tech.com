@@ -3679,13 +3679,13 @@
 
 			#main > .posts > article {
 				border-color: #eeeeee;
-				border-left-width: 2px;
+				border-right-width: 2px;
 				border-style: solid;
-				border-top-width: 2px;
+				border-bottom-width: 2px;
 				text-align: center;
 			}
 
-				#main > .posts > article > :last-child {
+				/* #main > .posts > article > :last-child {
 					margin-bottom: 0;
 				}
 
@@ -3695,7 +3695,7 @@
 
 				#main > .posts > article:nth-child(-n + 2) {
 					border-top-width: 0;
-				}
+				} */
 
 			@media screen and (max-width: 980px) {
 
@@ -3722,7 +3722,7 @@
 					width: 100%;
 				}
 
-				#main > .posts > article:nth-child(2n - 1) {
+				/* #main > .posts > article:nth-child(2n - 1) {
 					border-left-width: 2px;
 				}
 
@@ -3736,6 +3736,10 @@
 
 				#main > .posts > article:nth-child(-n + 1) {
 					border-top-width: 0;
+				} */
+
+				#main > .posts > article:nth-child(n+1) {
+					border-right-width: 0;
 				}
 
 				#main > .posts > article .image {
