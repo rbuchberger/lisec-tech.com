@@ -1715,7 +1715,8 @@
 
 	#site-banner {
 		text-transform: none;
-		width: 80%
+		width: 100%;
+    max-width: 800px;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1835,7 +1836,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #212931;
+    color: #073869;
 	}
 
 	blockquote {
@@ -4528,9 +4529,10 @@ i.fa-battery-full {
  }
 
  #header-logo {
-	 max-width: 400px;
+	 width: 80%;
+   max-width: 600px;
 	 position: relative;
-	 top: 100px;
+	 top: 80px;
  }
 
 /* Inverted display box */
@@ -4547,10 +4549,11 @@ article.inverted > div {
 }
 
 article.inverted > div div {
-	min-width: 300px;
-	width: 30%;
+  flex-basis: 300px;
+  flex-shrink: 0;
 	padding: 1rem;
 }
+
 article.inverted div h4 {
 	color: #ffffff;
 }

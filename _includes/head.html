@@ -1,11 +1,11 @@
 <head>
 		<title>{{ site.title }} {{ site.subtitle }}</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" />
 		<link rel="icon" href="/favicon.ico">
 		<noscript><link rel="stylesheet" href="{{ 'assets/css/noscript.css' | relative_url }}" /></noscript>
-		{% if page.url contains "/openings/" %}
+		{% if page.url contains "openings" %}
 			<!-- Script information for file attachment upload -->
 			<script charset="utf-8" src="https://ucarecdn.com/libs/widget/3.6.0/uploadcare.full.min.js"></script>
 		{% endif %}
@@ -18,6 +18,4 @@
 
 			gtag('config', 'UA-123751357-1');
 		</script>
-
-		<!-- Website created by Robert Buchberger, using Jekyll an the Massively theme. -->
 </head>
