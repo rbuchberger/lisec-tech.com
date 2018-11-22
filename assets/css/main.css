@@ -48,6 +48,16 @@
 		-webkit-text-size-adjust: none;
 	}
 
+  article > section:not(:last-child) {
+    padding-bottom: 1em;
+    margin-bottom: 4em;
+    border-bottom: 1px solid #0002;
+  }
+
+  article > header {
+    margin-bottom: 4em;
+  }
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -1675,7 +1685,7 @@
 		font-family: "Muli", sans-serif;
 		font-weight: 400;
 		font-size: 1.2rem;
-		line-height: 2.1;
+		line-height: 2.0;
 	}
 
 	a {
@@ -4610,4 +4620,31 @@ span.right {
 
 .float-right {
 	float: right;
+}
+
+div.profile-content {
+  display: flex;
+}
+
+section.team-profile .profile-image {
+  flex: 33%;
+  padding-top: .6em;
+}
+
+section.team-profile p {
+  padding-left: 3em;
+}
+
+@media (max-width: 900px) {
+  div.profile-content { 
+    flex-wrap: wrap;
+  }
+
+  .profile-image {
+    text-align: center;
+  }
+
+  section.team-profile p {
+    padding-left: 0;
+  }
 }
