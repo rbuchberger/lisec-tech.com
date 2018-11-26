@@ -4630,10 +4630,16 @@ div.profile-content {
 section.team-profile .profile-image {
   flex: 33%;
   padding-top: .6em;
+  flex-grow: 0;
+}
+
+section.team-profile img {
+  width: 100%;
 }
 
 section.team-profile p {
   padding-left: 3em;
+  flex: 66%;
 }
 
 @media (max-width: 900px) {

@@ -20,13 +20,24 @@ title: Project
                 <a href="/project/homing.html" class="button">Read more!</a>
             </p>
 </article>
-<article class="post">
-    <header>
-        <h1 class="text-center">Now hiring!</h1>
-    </header>
-    <p>I am looking for new team members, especially PhD and Master students. If you are an engineer or bachelor student also feel free to contact me for more information.</p>
-    <p><a href="/team/openings.html" class="button">Positions and Applications</a></p>
-</article>
+<section class="posts">
+    {% for post in site.posts limit:2 %}
+        <article>
+            <header>
+                <span class="date">{{ post.date | date_to_string }}</span>
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            </header>
+            <a href="{{ post.url }}"
+                class="image fit"><img src="{{ post.image }}"
+                    alt="Post Feature Image"></a>
+            <p>{{ post.excerpt }}</p>
+            <ul class="actions">
+                <li><a href="{{ post.url }}"
+                        class="button">Full Story</a></li>
+            </ul>
+        </article>
+    {% endfor %}
+</section>
 
 <article class="inverted">
     <h2>Important Dates</h2>
@@ -58,21 +69,12 @@ title: Project
     </div>
 </article>
 
-<section class="posts">
-    {% for post in site.posts limit:2 %}
-        <article>
-            <header>
-                <span class="date">{{ post.date | date_to_string }}</span>
-                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            </header>
-            <a href="{{ post.url }}"
-                class="image fit"><img src="{{ post.image }}"
-                    alt="Post Feature Image"></a>
-            <p>{{ post.excerpt }}</p>
-            <ul class="actions">
-                <li><a href="{{ post.url }}"
-                        class="button">Full Story</a></li>
-            </ul>
-        </article>
-    {% endfor %}
-</section>
+
+<article class="post">
+    <header>
+        <h1 class="text-center">Now hiring!</h1>
+    </header>
+    <p>I am always looking for new team members, especially PhD and Master students. If you are an engineer or bachelor student also feel free to contact me for more information.</p>
+    <p><a href="/team/openings.html" class="button">Positions and Applications</a></p>
+</article>
+
