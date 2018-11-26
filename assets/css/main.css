@@ -4624,22 +4624,29 @@ span.right {
 
 div.profile-content {
   display: flex;
-  padding: 1em 2em;
-}
-
-section.team-profile .profile-image {
-  flex: 33%;
-  padding-top: .6em;
-  flex-grow: 0;
 }
 
 section.team-profile img {
   width: 100%;
 }
 
-section.team-profile p {
-  padding-left: 3em;
-  flex: 66%;
+
+@media (min-width: 901px) {
+
+  div.profile-content {
+    padding: 2em;
+  }
+
+  section.team-profile .profile-image {
+    flex: 33%;
+    padding-top: .6em;
+    flex-grow: 0;
+  }
+
+  section.team-profile p {
+    padding-left: 3em;
+    flex: 66%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -4649,6 +4656,8 @@ section.team-profile p {
 
   .profile-image {
     text-align: center;
+    padding: 1em;
+    width: 100%;
   }
 
   section.team-profile p {
