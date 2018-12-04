@@ -35,6 +35,9 @@ defaults:
     layout: post
     permalink: "/blog/:title:output_ext"
 
+collections:
+  - events
+
 # Build settings
 markdown: kramdown
 theme: massively_jekyll_theme
@@ -62,7 +65,6 @@ mathjax:            true
 
 
 # Social media & Contact info
-
 email:  daziolkowska.edu@gmail.com
 linkedin_url: http://www.linkedin.com/in/dominika-zi%C3%B3%C5%82kowska-22424974
 
