@@ -41,10 +41,10 @@ title: Project
 
 <article class="inverted">
     <h2><a href="/events.html">Important Dates</a></h2>
-    <div>
+    <div class="events-container">
     {% assign events = site.events | reverse %}
     {% for event in events limit:3 %}
-        <div>
+        <div class="event-container">
           <h3><a href="{{ event.link }}">
                 {{ event.title }}
             </a></h3>
