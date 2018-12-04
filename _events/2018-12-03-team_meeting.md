@@ -1,6 +1,4 @@
 ---
 title: TEAM Meeting
-url: /blog/lees_seminar_preview.html
+url: /
 ---
-
-Sample Content
