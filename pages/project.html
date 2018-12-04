@@ -40,35 +40,21 @@ title: Project
 </section>
 
 <article class="inverted">
-    <h2>Important Dates</h2>
+    <h2><a href="/events.html">Important Dates</a></h2>
     <div>
+    {% assign events = site.events | reverse %}
+    {% for event in events limit:3 %}
         <div>
-            <h3><a href="#">
-                TEAM Meeting
+          <h3><a href="{{ event.link }}">
+                {{ event.title }}
             </a></h3>
             <h4>
-                03.12.2018
+                {{ event.date | date_to_string }}
             </h4>
         </div>
-        <div>
-            <h3><a href="/blog/lees_seminar_preview.html">
-                LEES Seminar
-            </a></h3>
-            <h4>
-                30.11.2018
-            </h4>
-        </div>
-        <div>
-            <h3><a href="/blog/new_members.html">
-                New Members Join
-            </a></h3>
-            <h4>
-              01.11.2018
-            </h4>
-        </div>
+      {% endfor %}
     </div>
 </article>
-
 
 <article class="post">
     <header>
