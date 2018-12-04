@@ -4552,24 +4552,26 @@ article.inverted {
 	text-align: center;
 }
 
-article.inverted > div {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
-article.inverted > div div {
-  flex-basis: 300px;
-  flex-shrink: 0;
-	padding: 1rem;
-}
-
 article.inverted div h4 {
 	color: #ffffff;
 }
 
 article.inverted h2 {
 	color: #ffffff;
+}
+
+/* Event container styling */
+
+.events-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.event-container {
+  flex-basis: 300px;
+  flex-shrink: 0;
+	padding: 1rem;
 }
 
 article.featured header p {
