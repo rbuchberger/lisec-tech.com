@@ -1,4 +1,4 @@
 ---
 title: PhD Candidate Interviews
-link: /blob/phd_offer.html
+link: /blog/phd_offer.html
 ---

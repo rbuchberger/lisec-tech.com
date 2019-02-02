@@ -1,4 +1,4 @@
 ---
-title: TEAM Meeting
+title: Group Meeting
 link: /team.html
 ---

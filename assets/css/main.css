@@ -4562,16 +4562,18 @@ article.inverted h2 {
 
 /* Event container styling */
 
-.events-container {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+@media (min-width: 800px) {
+  .events-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4em;
+    grid-row-gap: 4em;
+  }
 }
 
 .event-container {
-  flex-basis: 300px;
-  flex-shrink: 0;
-	padding: 1rem;
+  text-align: center;
+  margin-bottom: 4em;
 }
 
 article.featured header p {
