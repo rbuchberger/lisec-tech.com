@@ -1,5 +1,5 @@
 ---
-image: 'assets/images/blog/2018-12-13.jpg'
+image: '/assets/images/blog/2018-12-13.jpg'
 title: First Group Meeting
 ---
 
