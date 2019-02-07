@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: netlifycms # Branch to update (optional; defaults to master)
+  branch: netlifycms-testing # Branch to update (optional; defaults to master)
 
 media_folder: "assets/images/blog"
 
