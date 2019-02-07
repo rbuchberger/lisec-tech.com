@@ -2,8 +2,10 @@ backend:
   name: git-gateway
   branch: netlifycms-testing # Branch to update (optional; defaults to master)
 
+publish_mode: editorial_workflow
+
 media_folder: "assets/images/blog"
-logo_url: "/assets/images/LiSEC-LOGO_resized.png"
+logo_url: "/assets/images/collaboration_map.png"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -17,12 +19,11 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     delete: true # Allow users to delete items
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    format: 'yaml-frontmatter'
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Description", name: "description", widget: "text", required:
-        false, hint: 'Displayed in post previews'}
+      - {label: "Summary", name: "description", widget: "text", required:
+        false, hint: 'Displayed in italics at the top of the post. Can just be your name.'}
       - {label: "Image", name: "image", widget: "file", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
     meta: # Meta data fields. Just like fields, but without any preview element
@@ -40,6 +41,7 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: "Name", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "date"}
-      - {label: "Link to", name: "link", widget: "string"}
-      - {label: "Description", name: "body", widget: "string", required: false}
-
+      - {label: "Link to", name: "link", widget: "string", required: false,
+        hint: 'everything after https://lisec-tech.com'}
+      - {label: "Description", name: "body", widget: "string", required: false,
+        hint: 'currently not used, but could be in the future.'}
