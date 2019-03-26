@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NEW ARTICLE ON SSE
+title: New Article on Solid State Electrolyte Synthesis
 description: >-
   Rapid and Economic Synthesis of a Li7PS6 Solid Electrolyte from a Liquid
   Approach
