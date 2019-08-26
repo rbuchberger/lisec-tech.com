@@ -4673,3 +4673,8 @@ section.team-profile img {
   margin: 0 auto;
   max-width: 35em;
 }
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+}
