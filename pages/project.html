@@ -1,66 +1,84 @@
 ---
-permalink: "/"
+permalink: '/'
 layout: home
 title: Project
 ---
+
 <article class="post featured">
-    <header>
-        <h2>A new generation of the lithium battery:</h2>
-        <h2>assembly of an all-solid-state system</h2>
-        <p>HOMING Program sponsored by the Foundation for Polish Science</p>
-    </header>
-        
-        <p><i class="fa fa-battery-full post-icon"></i>Safety issues are of enormous concern in developing advanced energy storage systems, especially lithium technologies.
-            Commercial Li-ion batteries contain flammable organic liquid electrolytes and corresponding technical challenges;
-            most incidents involving Li-ion batteries were caused by the ignition of the electrolyte. The main aim of this proposal
-            is to assemble a completely solid-state cell using an inorganic Li-ion superconductor to benefit from its superior
-            electrochemical, mechanical and thermal stability, the impossibility of leakage, and the possibility of battery miniaturization.</p>
-            
-            <p>
-                <a href="/project/homing.html" class="button">Read more!</a>
-            </p>
+  <header>
+    <h2>A new generation of the lithium battery:</h2>
+    <h2>assembly of an all-solid-state system</h2>
+    <p>HOMING Program sponsored by the Foundation for Polish Science</p>
+
+    <p><a class="button special big" href="/team/openings/">Now Hiring!</a></p>
+  </header>
+
+
+  <p>
+    <i class="fa fa-battery-full post-icon"></i>
+    Safety issues are of enormous concern in developing advanced energy storage
+    systems, especially lithium technologies. Commercial Li-ion batteries
+    contain flammable organic liquid electrolytes and corresponding technical
+    challenges; most incidents involving Li-ion batteries were caused by the
+    ignition of the electrolyte. The main aim of this proposal is to assemble a
+    completely solid-state cell using an inorganic Li-ion superconductor to
+    benefit from its superior electrochemical, mechanical and thermal stability,
+    the impossibility of leakage, and the possibility of battery
+    miniaturization.
+  </p>
+
+  <p>
+    <a href="/project/homing.html" class="button">Read more!</a>
+  </p>
 </article>
 <section class="posts">
-    {% for post in site.posts limit:2 %}
-        <article>
-            <header>
-                <span class="date">{{ post.date | date_to_string }}</span>
-                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            </header>
-            <a href="{{ post.url }}"
-                class="image fit"><img src="{{ post.image }}"
-                    alt="Post Feature Image"></a>
-            <p>{{ post.excerpt }}</p>
-            <ul class="actions">
-                <li><a href="{{ post.url }}"
-                        class="button">Full Story</a></li>
-            </ul>
-        </article>
-    {% endfor %}
+  {% for post in site.posts limit:2 %}
+  <article>
+    <header>
+      <span class="date">{{ post.date | date_to_string }}</span>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </header>
+    <a href="{{ post.url }}" class="image fit">
+      <img src="{{ post.image }}" alt="Post Feature Image" />
+    </a>
+
+    <p>{{ post.excerpt }}</p>
+    <ul class="actions">
+      <li><a href="{{ post.url }}" class="button">Full Story</a></li>
+    </ul>
+  </article>
+  {% endfor %}
 </section>
 
 <article class="inverted">
-    <h2><a href="/events.html">Important Dates</a></h2>
-    <div class="events-container">
-    {% assign events = site.events | reverse %}
-    {% for event in events limit:3 %}
-        <div class="event-container">
-          <h3><a href="{{ event.link }}">
-                {{ event.title }}
-            </a></h3>
-            <h4>
-                {{ event.date | date_to_string }}
-            </h4>
-        </div>
-      {% endfor %}
+  <h2><a href="/events.html">Important Dates</a></h2>
+  <div class="events-container">
+    {% assign events = site.events | reverse %} {% for event in events limit:3
+    %}
+    <div class="event-container">
+      <h3>
+        <a href="{{ event.link }}">
+          {{ event.title }}
+        </a>
+      </h3>
+      <h4>
+        {{ event.date | date_to_string }}
+      </h4>
     </div>
+    {% endfor %}
+  </div>
 </article>
 
 <article class="post">
-    <header>
-        <h1 class="text-center">Now hiring!</h1>
-    </header>
-    <p>I am always looking for new team members, especially PhD and Master students. If you are an engineer or bachelor student also feel free to contact me for more information.</p>
-    <p><a href="/team/openings.html" class="button">Positions and Applications</a></p>
+  <header>
+    <h1 class="text-center">Now hiring!</h1>
+  </header>
+  <p>
+    I am always looking for new team members, especially PhD and Master
+    students. If you are an engineer or bachelor student also feel free to
+    contact me for more information.
+  </p>
+  <p>
+    <a href="/team/openings.html" class="button">Positions and Applications</a>
+  </p>
 </article>
-
