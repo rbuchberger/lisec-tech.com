@@ -25,6 +25,9 @@
 					{% if page.description %}
 						<p>{{ page.description }}</p>
 					{% endif %}
+					{% if page.author %}
+						<p>Written by: {{ page.author }}</p>
+					{% endif %}
 				</header>
 
 				{% if page.image %}

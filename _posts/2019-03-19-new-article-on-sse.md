@@ -5,6 +5,7 @@ description: >-
   Rapid and Economic Synthesis of a Li7PS6 Solid Electrolyte from a Liquid
   Approach
 image: /assets/images/blog/2019-02-05_journal.png
+author: DAZ
 ---
 On Janury 17th, 2019, we have published, together with collaborators from University of Louisville, a [new paper on solid state electrolyte synthesis](https://pubs.acs.org/doi/10.1021/acsami.8b19181):
 
