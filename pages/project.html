@@ -9,11 +9,28 @@ title: Project
     <h2>A new generation of the lithium battery:</h2>
     <h2>assembly of an all-solid-state system</h2>
     <p>HOMING Program sponsored by the Foundation for Polish Science</p>
+  </header>
+  <!-- </article>             -->
 
-    <p><a class="button special big" href="/team/openings/">Now Hiring!</a></p>
+  <!-- <article class="post"> -->
+  <header>
+    <h1 class="text-center">Now hiring!</h1>
+    <p>
+      <a href="/team/openings.html" class="button special big">
+        <i class="fa fa-user-plus"></i>
+        Positions and Applications
+      </a>
+    </p>
   </header>
 
+  <p>
+    I am always looking for new team members, especially PhD and Master
+    students. If you are an engineer or bachelor student also feel free to
+    contact me for more information.
+  </p>
+</article>
 
+<article class="post">
   <p>
     <i class="fa fa-battery-full post-icon"></i>
     Safety issues are of enormous concern in developing advanced energy storage
@@ -31,8 +48,17 @@ title: Project
     <a href="/project/homing.html" class="button">Read more!</a>
   </p>
 </article>
+
+<header>
+  <h2 class="text-center">
+    <a href="/blog/">
+      Recent Blog Posts: 
+    </a>
+  </h2>
+</header>
 <section class="posts">
-  {% for post in site.posts limit:2 %}
+
+  {% for post in site.posts limit:4 %}
   <article>
     <header>
       <span class="date">{{ post.date | date_to_string }}</span>
@@ -42,14 +68,13 @@ title: Project
       <img src="{{ post.image }}" alt="Post Feature Image" />
     </a>
 
-    <p>{{ post.excerpt }}</p>
+    <!-- <p>{{ post.excerpt }}</p> -->
     <ul class="actions">
       <li><a href="{{ post.url }}" class="button">Full Story</a></li>
     </ul>
   </article>
   {% endfor %}
 </section>
-
 <article class="inverted">
   <h2><a href="/events.html">Important Dates</a></h2>
   <div class="events-container">
@@ -67,18 +92,4 @@ title: Project
     </div>
     {% endfor %}
   </div>
-</article>
-
-<article class="post">
-  <header>
-    <h1 class="text-center">Now hiring!</h1>
-  </header>
-  <p>
-    I am always looking for new team members, especially PhD and Master
-    students. If you are an engineer or bachelor student also feel free to
-    contact me for more information.
-  </p>
-  <p>
-    <a href="/team/openings.html" class="button">Positions and Applications</a>
-  </p>
 </article>
