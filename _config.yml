@@ -58,6 +58,9 @@ kramdown:
   toc_levels:       1..6
   enable_coderay:   false
 
+picture:
+  source: assets/images
+
 mathjax:            true
 # sass:
 #   sass_dir:         _sass

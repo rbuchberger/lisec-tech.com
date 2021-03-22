@@ -1,0 +1,12 @@
+media_queries:
+
+presets:
+  pub:
+    base_width: 200
+    pixel_ratios: [1, 1.5, 2]
+    formats: [webp original]
+    fallback_width: 200
+    format_quality:
+      webp: 100
+    attributes: 
+      parent: 'class="pub-preview"'
