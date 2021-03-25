@@ -1,5 +1,5 @@
 ---
-image: '/assets/images/blog/2018-12-13.jpg'
+image: 'blog/2018-12-13.jpg'
 author: 'DAZ'
 title: First Group Meeting
 ---

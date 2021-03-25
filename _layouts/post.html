@@ -31,9 +31,9 @@
 				</header>
 
 				{% if page.image %}
-					<div class="image main">
-						<img src="{{ page.image }}" alt="" />
-					</div>
+        <div class="image main">
+          {% picture {{ page.image }} --alt %}
+        </div>
 				{% endif %} 
 				
 				{{ content }}

@@ -1,7 +1,7 @@
 ---
 title: "LEES Seminar Preview"
 author: "DAZ"
-image: "/assets/images/blog/lab_seminar_preview.png"
+image: "blog/lab_seminar_preview.png"
 description: Dominika Ziolkowska, PhD, Project Manager
 ---
 

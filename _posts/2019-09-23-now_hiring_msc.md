@@ -1,7 +1,7 @@
 ---
 title: "NOW HIRING - MSc STUDENT POSITION AVAILABLE"
 author: "DAB"
-image: "/assets/images/blog/2019-09-23.jpg"
+image: "blog/2019-09-23.jpg"
 ---
 
 If you are a motivated young researcher seeking an interesting Master thesis

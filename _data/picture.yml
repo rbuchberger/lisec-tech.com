@@ -1,5 +1,6 @@
 media_queries:
   desktop: 'min-width: 900px'
+  full_width: 'min-width: 1100px'
 
 presets:
   pub:
@@ -17,3 +18,19 @@ presets:
     sizes:
       desktop: 285px
     size: 'calc(100vw - 200px)'
+
+  blog-preview:
+    formats: [webp, original]
+    dimension_attributes: true
+    base_width: 400
+    pixel_ratios: [1, 1.5, 2]
+    fallback_width: 400
+    attributes:
+      img: class="image fit"
+
+  blog-header:
+    formats: [webp, original]
+    dimension_attributes: true
+    sizes:
+      full_width: '938px'
+    size: 'calc(100vw - 180px)'

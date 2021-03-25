@@ -1,7 +1,7 @@
 ---
 title: "New battery tester with EIS module"
 author: "DAZ"
-image: "/assets/images/blog/2019-05-15.jpg"
+image: "blog/2019-05-15.jpg"
 ---
 
 We are happy to announce that thanks to the Foundation for Polish Science we

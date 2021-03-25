@@ -2462,6 +2462,7 @@ transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-co
     display: block;
     margin: 2.5rem 0;
     width: 100%;
+    height: auto;
   }
 
   .image.fit:first-child {

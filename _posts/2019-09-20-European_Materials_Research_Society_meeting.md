@@ -1,7 +1,7 @@
 ---
 title: "European Materials Research Society meeting"
 author: "DAB (formerly DAZ)"
-image: "/assets/images/blog/2019-09-20.jpg"
+image: "blog/2019-09-20.jpg"
 ---
 
 On 16th Sep Maciej Boczar presented his talk during the E-MRS Fall Meeting held

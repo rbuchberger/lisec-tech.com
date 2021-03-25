@@ -1,7 +1,7 @@
 ---
 title: "MID-TERM REVIEW by iKnowWho"
 author: "DAZ"
-image: "/assets/images/blog/2019-08-09.jpg"
+image: "blog/2019-08-09.jpg"
 ---
 
 This week 2 coworkers and I from the University of Warsaw attended the Mid-Term

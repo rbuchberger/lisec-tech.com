@@ -1,7 +1,7 @@
 ---
 title: "LOCAL KICK OFF at University of Warsaw"
 author: "DAZ"
-image: "/assets/images/blog/2019-05-29.jpg"
+image: "blog/2019-05-29.jpg"
 ---
 
 This week we hosted a Biotronic R&D employee and I-Know-How personnel at the

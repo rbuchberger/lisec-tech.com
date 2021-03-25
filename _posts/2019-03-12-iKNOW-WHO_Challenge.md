@@ -1,7 +1,7 @@
 ---
 title: "iKNOW-WHO Challenge"
 author: "DAZ"
-image: "/assets/images/blog/2019-03-12.jpg"
+image: "blog/2019-03-12.jpg"
 ---
 
 I had the pleasure to take part in the Biotronik challenge organized by the

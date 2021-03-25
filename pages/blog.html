@@ -3,18 +3,19 @@ title: "Research Blog"
 permalink: /blog.html
 ---
 
-<!-- No pagination yet. If this starts getting huge I'll add it, but I don't know how much it will actually be updated. -->
 <section class="posts">
     {% for post in site.posts %}
         <article>
             <header>
                 <span class="date">{{ post.date | date_to_string }}</span>
-                <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
             </header>
-            <a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+            {% if post.image %}
+              {% picture blog-preview {{ post.image }} --link {{ post.url }} %}
+            {% endif %}
             <p>{{ post.excerpt }}</p>
             <ul class="actions">
-                <li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+              <li><a href="{{ post.url }}" class="button">Full Story</a></li>
             </ul>
         </article>
     {% endfor %}

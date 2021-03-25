@@ -1,7 +1,7 @@
 ---
 title: "3rd Interdisicplinary FNP Conference"
 author: "DAZ"
-image: "/assets/images/blog/2019-04-12.png"
+image: "blog/2019-04-12.png"
 ---
 
 Over the last 2 days Maciej Boczar and I attended a very interesting

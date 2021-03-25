@@ -1,7 +1,7 @@
 ---
 title: "New Team Members"
 author: "DAZ"
-image: "/assets/images/blog/new_team_members.png"
+image: blog/new_team_members.png
 description: Dominika Ziolkowska, PhD, Project Manager
 ---
 

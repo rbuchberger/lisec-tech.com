@@ -1,7 +1,7 @@
 ---
 title: Networking experience
 author: "DAZ"
-image: "/assets/images/blog/2018-11-26.jpg"
+image: "blog/2018-11-26.jpg"
 ---
 
 I have a pleasure to announce that I was invited to the **AVL  Software and Functions** company and had a very interesting meeting and discussion about all-solid-state batteries including expecations and perspective of the industial sector. This was a very informative session to me and refreshed my viewpoint on the manufacture needs.
