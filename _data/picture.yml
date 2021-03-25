@@ -1,12 +1,19 @@
 media_queries:
+  desktop: 'min-width: 900px'
 
 presets:
   pub:
+    formats: [webp, original]
     base_width: 200
     pixel_ratios: [1, 1.5, 2]
-    formats: [webp original]
     fallback_width: 200
     format_quality:
       webp: 100
     attributes: 
       parent: 'class="pub-preview"'
+
+  team:
+    formats: [webp, original]
+    sizes:
+      desktop: 285px
+    size: 'calc(100vw - 200px)'
