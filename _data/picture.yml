@@ -4,7 +4,7 @@ media_queries:
 
 presets:
   pub:
-    formats: [webp, original]
+    # formats: [webp, original]
     base_width: 200
     pixel_ratios: [1, 1.5, 2]
     fallback_width: 200
@@ -14,13 +14,13 @@ presets:
       parent: 'class="pub-preview"'
 
   team:
-    formats: [webp, original]
+    # formats: [webp, original]
     sizes:
       desktop: 285px
     size: 'calc(100vw - 200px)'
 
   blog-preview:
-    formats: [webp, original]
+    # formats: [webp, original]
     dimension_attributes: true
     base_width: 400
     pixel_ratios: [1, 1.5, 2]
@@ -29,7 +29,7 @@ presets:
       img: class="image fit"
 
   blog-header:
-    formats: [webp, original]
+    # formats: [webp, original]
     dimension_attributes: true
     sizes:
       full_width: '938px'
